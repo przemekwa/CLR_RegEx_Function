@@ -7,6 +7,26 @@ CLR User-Defined Functions
 
 Funckja daje możliwośc operacji na wyrażeniach regularnych w MS SQL przy użyciu biblioteki C# w MS SQL
 
+### .NET
+
+Otwieramy i kompilujemy projekt lub bierzmy wersję z releases (https://github.com/przemekwa/CLR_RegEx_Function/releases)
+Dll umieszczamy gdzieś. Ścieżkę do dll podamy podczas rejestracji biblioteki w MS SQL. 
+Poniżej opis co zrobić w MS SQL.
+
+
+### Enable CLR
+
+```SQL
+
+EXEC sp_configure 'clr enabled', 1
+GO
+RECONFIGURE
+GO
+EXEC sp_configure 'clr enabled'
+GO
+
+```
+
 ### SQL
 
 ```SQL
