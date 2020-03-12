@@ -32,7 +32,7 @@ GO
 ```SQL
 
 	-- DROP ASSEMBLY CLR_REG_EX
-CREATE ASSEMBLY CLR_REG_EX FROM 'D:\Projects\clr_ms_sql_study\CLR_RegEx_Function\CLR_RegEx_Function\bin\Release\CLR_RegEx_Function.dll';  
+CREATE ASSEMBLY CLR_REG_EX FROM 'D:\CLR_RegEx_Function.dll';  
 GO  
   
 	-- DROP PROCEDURE IsMatch
@@ -51,15 +51,16 @@ GO
 
 
 
+## Some other info
+
+## Links
 
 https://docs.microsoft.com/en-us/sql/relational-databases/clr-integration-database-objects-user-defined-functions/clr-user-defined-functions?view=sql-server-ver15
-
+https://stackoverflow.com/questions/25394448/how-are-parameters-passed-from-sql-server-to-a-clr-based-stored-procedure
 
 ## Compile:
 
 `csc.exe /t:library /out:FirstUdf.dll FirstUdf.cs   `
-
-
 
 ## SQL CREATE ASSEMBLY
 
